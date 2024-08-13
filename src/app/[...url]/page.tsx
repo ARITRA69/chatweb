@@ -47,7 +47,7 @@ export default async function Page({ params }: PageProps) {
     <ResizablePanelGroup direction="horizontal">
       <div className="flex gap-2 w-full bg-primary">
         <ResizablePanel minSize={30} className="py-4 pl-4">
-          <embed src={reconstructedUrl} className="w-full h-full rounded-2xl" />
+          <iframe src={reconstructedUrl} className="w-full h-full rounded-2xl" />
         </ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel minSize={30} className="py-4 pr-4 h-screen">

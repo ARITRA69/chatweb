@@ -5,7 +5,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (
-    <section className="flex items-center justify-center h-screen w-full bg-gradient-to-tr from-purple-50 via-orange-50 to-sky-50">
+    <section className="flex items-center justify-center h-screen w-full bg-gradient-to-tr from-purple-100 via-orange-100 to-sky-100">
       <div className="container px-4 md:px-6 flex flex-col items-center justify-center text-center space-y-6">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl xl:text-7xl">

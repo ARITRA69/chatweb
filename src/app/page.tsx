@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { HeroUrlForm } from "@/components/hero-url-form";
 import { GithubIcon, Mail, TwitterIcon } from "lucide-react";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (
-    <section className="flex items-center justify-center h-screen w-full">
+    <section className="flex items-center justify-center h-screen w-full bg-gradient-to-tr from-purple-50 via-orange-50 to-sky-50">
       <div className="container px-4 md:px-6 flex flex-col items-center justify-center text-center space-y-6">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl xl:text-7xl">
@@ -18,11 +19,20 @@ export default function Home() {
           <HeroUrlForm />
         </div>
         <div className="flex items-center gap-4">
-          <Link href="#" className="hover:underline" prefetch={false}>
+          {/* <ModeToggle /> */}
+          <Link
+            href="https://github.com/ARITRA69/chatweb"
+            className="hover:underline"
+            prefetch={false}
+          >
             <GithubIcon className="w-6 h-6" />
             <span className="sr-only">GitHub Repo</span>
           </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
+          <Link
+            href="https://x.com/aritra81999"
+            className="hover:underline"
+            prefetch={false}
+          >
             <TwitterIcon className="w-6 h-6" />
             <span className="sr-only">Twitter</span>
           </Link>
@@ -32,7 +42,7 @@ export default function Home() {
             prefetch={false}
           >
             <Mail className="w-6 h-6" />
-            <span className="sr-only">Discord</span>
+            <span className="sr-only">Mail</span>
           </Link>
         </div>
       </div>

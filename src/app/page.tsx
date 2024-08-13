@@ -22,6 +22,7 @@ export default function Home() {
           {/* <ModeToggle /> */}
           <Link
             href="https://github.com/ARITRA69/chatweb"
+            target="_blank"
             className="hover:underline"
             prefetch={false}
           >
@@ -30,6 +31,7 @@ export default function Home() {
           </Link>
           <Link
             href="https://x.com/aritra81999"
+            target="_blank"
             className="hover:underline"
             prefetch={false}
           >
